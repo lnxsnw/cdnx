@@ -137,7 +137,7 @@ function list_files(path,files){
 	            </a>
 	        </li>`;
         }else{
-            var p = path+item.name;
+            var p = path + item.name + '?a=view';
             var c = "file";
             if(item.name == "README.md"){
                  get_file(p, item, function(data){
